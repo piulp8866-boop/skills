@@ -2,7 +2,7 @@
 
 用于备份、迁移和安装 Codex / Claude Code 技能。更新日期：2026-10-26。
 
-本仓库共 **29 个技能**：14 个独立技能，以及 Superpowers 套件中的 15 个技能。不统计 Codex 自带及其他插件提供的技能。
+本仓库共 **30 个技能**：15 个独立技能，以及 Superpowers 套件中的 15 个技能。不统计 Codex 自带及其他插件提供的技能。
 
 ## 独立技能：名称与作用
 
@@ -21,6 +21,7 @@
 | [verify](skills/verify) | 用测试、构建与直接检查证明变更有效 | [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode/tree/main/skills/verify)；main |
 | [simplify](skills/simplify) | 保持行为不变，简化代码并检查复用、质量和效率 | [dkstm95/codex-simplify-skill](https://github.com/dkstm95/codex-simplify-skill/tree/main/skills/simplify)；main |
 | [ai-slop-cleaner](skills/ai-slop-cleaner) | 在回归验证保护下清理冗余代码、重复与过度抽象 | [yeachan-heo/oh-my-codex](https://github.com/yeachan-heo/oh-my-codex/tree/v0.20.0/skills/ai-slop-cleaner)；v0.20.0 |
+| [ponytail](skills/ponytail) | 以最小完整改动解决问题，优先复用现有代码、标准库和平台能力，减少过度设计 | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) |
 | [remember](skills/remember) | 把可复用项目知识整理到适当的笔记或持久文档 | [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode/tree/main/skills/remember)；main |
 
 拼写对应：deep-intervier → deep-interview；remermber → remember。安装及调用使用正式名称。
@@ -73,6 +74,7 @@
 | deep-interview | OMX v0.20.0；完整状态持久化与交接依赖 omx 及相关工作流 |
 | ultrawork | 固定 OMX v0.20.0；新版本已移除并迁移到 team。状态命令依赖 omx，代理角色与模型需适配宿主能力 |
 | ai-slop-cleaner | 需要项目测试/构建工具；复杂架构问题的 ralplan 升级路径需另装对应工作流 |
+| ponytail | 独立说明型技能；支持 lite/full/ultra，默认 full。此次不注册插件生命周期钩子 |
 | Superpowers | 并行技能依赖宿主的多代理能力；工具名可能因平台不同而变化 |
 
 **技能文件已安装，不代表所有后端已配置或已通过实际任务验证。**
@@ -86,4 +88,4 @@
 - 功能重叠时按任务选择技能，用户要求优先，避免叠加多个完整工作流。
 - config/、mcp/ 是历史参考资料，不应直接覆盖当前账号、权限或 Codex 配置。
 - penguin-vision 及其识图钩子已从当前版本移除，Git 历史未重写。
-- Ponytail（马尾辫）按用户要求跳过，不包含在本次安装和备份中。
+- Ponytail（马尾辫）已按后续要求安装为独立技能，未安装常驻插件钩子。

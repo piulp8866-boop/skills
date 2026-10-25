@@ -8,7 +8,7 @@
 
 Codex 目标目录为 ~/.codex/skills/，Claude Code 为 ~/.claude/skills/。
 
-将 skills/ 下的 13 个目录整体复制到目标目录；再将 plugins/html-ppt 复制为目标目录中的 html-ppt，共 14 个独立技能。保留 SKILL.md、引用、脚本、许可证及来源文件。目标已存在时先比较并备份本地定制，再决定是否覆盖。
+将 skills/ 下的 14 个目录整体复制到目标目录；再将 plugins/html-ppt 复制为目标目录中的 html-ppt，共 15 个独立技能。保留 SKILL.md、引用、脚本、许可证及来源文件。目标已存在时先比较并备份本地定制，再决定是否覆盖。
 
 ## Superpowers
 
@@ -29,7 +29,7 @@ Codex 目标目录为 ~/.codex/skills/，Claude Code 为 ~/.claude/skills/。
 
 下一轮对话检查技能是否可见；必要时重新打开会话。先用小范围任务验证，检查实际工具输出和依赖状态。
 
-本批新增技能附 SOURCE.json 和 LICENSE。deep-intervier / remermber 使用正式名称 deep-interview / remember。Ponytail 按用户要求跳过。
+本批新增技能附 SOURCE.json 和 LICENSE。deep-intervier / remermber 使用正式名称 deep-interview / remember。Ponytail 已安装为独立技能，复制 skills/ponytail 即可；其插件生命周期钩子未安装。
 
 ## 历史资料
 
