@@ -8,18 +8,5 @@
     "ANTHROPIC_MODEL": "deepseek-v4-pro[1m]",
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
   },
-  "model": "haiku",
-  "hooks": {
-    "UserPromptSubmit": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "wsl.exe node /home/user0286/.claude/hooks/penguin-vision-autohint.mjs",
-            "timeout": 180
-          }
-        ]
-      }
-    ]
-  }
+  "model": "haiku"
 }

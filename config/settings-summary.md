@@ -1,31 +1,10 @@
-# Claude Code 配置摘要
+# Claude Code 历史配置示例
 
-## API 后端
-- **Base URL**: `https://api.deepseek.com/anthropic`（DeepSeek API，兼容 Anthropic 协议）
-- **认证方式**: Bearer Token（已脱敏）
-- **当前模型**: `deepseek-v4-pro[1m]`
+config/settings.json 是历史 DeepSeek / Anthropic 协议配置的脱敏备份，不适用于 Codex，也不会随技能同步自动应用。
 
-## 模型映射
-| Claude 模型名 | 实际映射 |
-|--------------|---------|
-| Opus | `deepseek-v4-pro[1m]` |
-| Sonnet | `deepseek-v4-flash` |
-| Haiku | `deepseek-v4-flash` |
+- 认证值为占位符，不包含可直接使用的凭据。
+- 原有模型映射保留作参考，当前服务支持情况需另行确认。
+- 自动视觉钩子已移除，示例不注册 hooks。
+- settings.local.json 未导出；不应从历史设备复制权限规则到新环境。
 
-## 已注册的 Hooks
-| 事件 | 类型 | 命令 | 超时 |
-|------|------|------|------|
-| `UserPromptSubmit` | command (WSL) | `wsl.exe node penguin-vision-autohint.mjs` | 180s |
-
-## 权限配置（settings.local.json）
-- **约 490 条权限规则**，覆盖范围：
-  - Bash: npm, node, python, pip, git, docker, curl, mysql, mvn, gradlew, java, pnpm, winget, choco
-  - 项目路径: `D:\毕业设计代码\canteen-*`, `D:\桌面\zy\java-fitness-system\*`, `D:\集成测试\body-monitor-*`
-  - 数据库: fitness_system, hx5759_canteen_supervision, springbootj8kskvkr
-  - WebFetch: 多个域名（GitHub, Unsplash, 小红书, B站, V2EX 等）
-  - Skills: penguin-vision 已授权
-- **注意**: 此文件包含 Penguin Vision API 密钥，已从导出中排除
-
-## 特殊配置
-- `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC`: `1`（禁用非必要网络流量）
-- 非视觉模型通过 Penguin Vision 钩子自动回退视觉处理
+安装技能请参阅 [INSTALL.md](../INSTALL.md)，保留设备现有的账号及应用设置。
