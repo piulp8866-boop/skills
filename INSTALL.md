@@ -38,3 +38,11 @@
 
 确认各技能目录存在 SKILL.md，并在下一轮对话检查技能是否已加载；必要时重新打开会话。
 对命令行依赖分别检查版本和认证状态。文件安装成功不代表平台登录、网络或 API 额度已配置。
+
+## Superpowers 插件
+
+推荐在 Codex 插件目录搜索 Superpowers，点击安装，并按界面要求开始新会话。Claude Code 按 plugins/superpowers/README.md 的对应平台说明安装。
+
+plugins/superpowers 是官方 v7.0.1 的完整受版本控制文件快照（不含 .git），保留许可证与平台清单，不会自动更新。上游提交：2ce8aa15d05bd57213e6f746f953aafb7ded7a8b。
+
+若仅复制技能，可将 plugins/superpowers/skills 下各目录复制到目标 skills 目录；这只安装技能文件，不等同于完整插件安装。已通过插件安装时不要重复复制。

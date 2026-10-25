@@ -16,7 +16,7 @@
 | web-design-guidelines | 检查网页体验与可访问性 | skills/web-design-guidelines | [Vercel](https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines) |
 | gh-fix-ci | 分析 GitHub Actions 中失败的 PR 检查 | skills/gh-fix-ci | [OpenAI](https://github.com/openai/skills/tree/main/skills/.curated/gh-fix-ci) |
 
-共 7 个技能。第三方技能保留原有许可证及随附资源；具体授权以各目录文件和上游仓库为准。
+共 7 个独立技能，另附 Superpowers 技能套件（15 个技能）。第三方技能保留原有许可证及随附资源；具体授权以各目录文件和上游仓库为准。
 
 ## 依赖与使用限制
 
@@ -41,3 +41,14 @@
 识图技能及其自动钩子已从当前版本移除，安装指南和配置示例已同步清理。此变更不重写既有 Git 历史。
 
 新增技能来自上游快照，不会自动更新。更新时应核对来源、许可证和变更，并保留本地定制。
+
+## Superpowers
+
+已备份官方 obra/superpowers v7.0.1，包含 15 个技能：需求梳理、计划、TDD、调试、代码审查、并行协作和交付验证等。
+
+- 位置：[plugins/superpowers](plugins/superpowers)
+- 上游：https://github.com/obra/superpowers
+- 快照提交：2ce8aa15d05bd57213e6f746f953aafb7ded7a8b
+- 许可证：MIT，保留上游 LICENSE。
+- Codex 推荐从插件目录搜索 Superpowers 并安装。仓库备份本身不代表本机插件已启用。
+- 上游可选视觉辅助界面与已删除的识图技能不同；其遥测设置见上游 README。
